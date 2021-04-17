@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+
+/* background: black;  */
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+color: white;
+font-family: 'Raleway', sans-serif;
+min-height: 100vh;
+
+}
+
+header{
+    /* font-size: 1.5rem; */
+}
+
+h1{
+    transform: translate(-50,-50);
+    color:transparent;
+    -webkit-text-stroke: 2px white;
+    font-size: 70px;
+     font-family: 'Anton', sans-serif; 
+    text-shadow: 0px 0px rgb(240,54,54);
+    transition: all 1s ease;
+
+
+}
+h1:hover{
+    text-shadow: 5px 5px rgb(240,54,54), 7px 7px rgb(54,97,240),10px 10px 23px rgb(73,73,73);
+}
+
+header,
+form{
+    
+min-height: 20vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+form input,
+ form button{
+     margin: 5px;
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 5px;
+    background: white;
+}
+
+form button{
+    color: red;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover{
+    background: blue;
+    color: white;
+}
+
+.todo-contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo-list{
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+   
+    background:white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    transition: all 0.56s ease; 
+    
+}
+
+.todo li{
+    flex: 1;
+
+}
+
+.trash-btn, 
+ .complete-btn{
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    background: green;
+}
+.todo-item{
+    padding: 0rem 0.5rem;
+    
+    
+}
+
+.check, .trash{
+    pointer-events: none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+.select{
+    margin: 1rem;
+    
+    position: relative;
+    overflow: hidden;
+}
+ select{
+     color: #ff6f47;
+     width: 10rem;
+     cursor: pointer;
+     padding: 1rem;
+
+ }
+
+ .select::after{
+     content:"\25BC";
+     position: absolute;
+     background : #d84b86;
+     top: 0;
+     right: 0;
+     padding: 1rem;
+     pointer-events: none;
+     transition: all 0.3s ease;
+ }
+
+ .select:hover::after{
+     background: white;
+     color: #ff6f47;
+ }

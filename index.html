@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <a href="https://icons8.com/icon/1485/add-column"></a>
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>TO-DO LIST!!</h1>
+    </header>
+    <form>
+<input type="text" class="todo-input">
+<button class="todo-button" type="submit">
+    <img src="https://img.icons8.com/metro/26/000000/add-column.png"/>
+   
+    <!-- <i class="far fa-plus-square"></i> -->
+</button>
+<div class="select">
+    <select name="todos" id="filter-todo" class="filter-todo">
+      <option value="all">ALL</option>
+      <option value="Completed">Completed</option>
+      <option value="Uncompleted">Uncompleted</option>
+
+    </select>
+</div>
+    </form>
+
+    <div class="todo-contain">
+        <ul class="todo-list"></ul>
+    
+
+    </div> 
+
+    <script src="todo.js">
+
+    </script>
+    
+</body>
+</html>
